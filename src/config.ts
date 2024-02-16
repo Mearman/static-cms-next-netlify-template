@@ -1,7 +1,11 @@
 import type { Config } from "@staticcms/core";
 
 const config: Config = {
-  backend: { name: "git-gateway", branch: "main" },
+  publish_mode: "editorial_workflow",
+  backend: {
+    name: "git-gateway",
+    branch: "main",
+  },
   media_folder: "public/images",
   public_folder: "/images",
   collections: [
